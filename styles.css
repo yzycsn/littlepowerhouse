@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#dvd-logo {
+    width: 100px;
+    height: 50px;
+    background-color: #ff0000;
+    position: absolute;
+}
