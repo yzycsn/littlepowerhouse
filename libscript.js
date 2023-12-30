@@ -5,7 +5,7 @@ function showSlides() {
     slidesContainer.innerHTML = ''; // Clear existing content
 
     // Array of book covers (replace with actual cover filenames)
-    const bookCovers = ['book1_cover.jpg', 'book2_cover.jpg'];
+    const bookCovers = ['book1_cover.jpg', 'book2_cover.jpg', 'book3_cover.jpg'];
 
     for (let i = 0; i < bookCovers.length; i++) {
         const slide = document.createElement('div');
@@ -16,7 +16,12 @@ function showSlides() {
         img.alt = `Book ${i + 1} Cover`;
 
         // Set a fixed height for each book cover based on the aspect ratio (1:1.41)
-        img.style.height = 'calc(10vw / 1.41)';
+        img.style.height = 'calc(100vw / 1.41)';
+
+        // Add click event listener to redirect to the corresponding PDF file
+        img.addEventListener('click', function() {
+            window.open(`books/book${i + 1}.pdf`, '_blank');
+        });
 
         const bookTitle = document.createElement('div');
         bookTitle.classList.add('book-title');
@@ -28,33 +33,5 @@ function showSlides() {
         slidesContainer.appendChild(slide);
     }
 
-    // Display the current slide
-    slidesContainer.getElementsByClassName('book-slide')[slideIndex].style.display = 'block';
-}
+    //
 
-function plusSlides(n) {
-    slideIndex += n;
-
-    const slides = document.getElementsByClassName('book-slide');
-
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    } else if (slideIndex < 0) {
-        slideIndex = slides.length - 1;
-    }
-
-    showSlides();
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    showSlides();
-
-    // Attach click event handlers to navigation arrows
-    document.querySelector('.prev').addEventListener('click', function() {
-        plusSlides(-1);
-    });
-
-    document.querySelector('.next').addEventListener('click', function() {
-        plusSlides(1);
-    });
-});
