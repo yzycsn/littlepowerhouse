@@ -13,6 +13,11 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
 .slideshow-container {
     position: relative;
     max-width: 600px;
@@ -54,3 +59,5 @@ img {
 .next {
     right: 10px;
 }
+
+/* Add additional styles as needed */
