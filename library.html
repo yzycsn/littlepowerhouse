@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="libstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library</h1>
+        <div class="slideshow-container">
+            <div class="book-slide fade">
+                <img src="book_covers/book1_cover.jpg" alt="Book 1 Cover">
+                <div class="book-title"><a href="books/book1.pdf" target="_blank">Book 1</a></div>
+            </div>
+
+            <div class="book-slide fade">
+                <img src="book_covers/book2_cover.jpg" alt="Book 2 Cover">
+                <div class="book-title"><a href="books/book2.pdf" target="_blank">Book 2</a></div>
+            </div>
+
+            <!-- Add more book slides as needed -->
+
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="libscript.js"></script>
+</body>
+</html>
