@@ -2,7 +2,7 @@ let slideIndex = 0;
 
 function showSlides() {
     const slidesContainer = document.getElementById("slideshow-container");
-    slidesContainer.innerHTML = ''; // Clear existing content
+    //slidesContainer.innerHTML = ''; // Clear existing content
 
     // Array of book covers (replace with actual cover filenames)
     const bookCovers = ['book1_cover.jpg', 'book2_cover.jpg'];
