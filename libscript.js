@@ -5,7 +5,7 @@ function showSlides() {
     slidesContainer.innerHTML = ''; // Clear existing content
 
     // Array of book covers (replace with actual cover filenames)
-    const bookCovers = ['book1_cover.jpg', 'book2_cover.jpg', 'book3_cover.jpg'];
+    const bookCovers = ['book1_cover.jpg', 'book2_cover.jpg'];
 
     for (let i = 0; i < bookCovers.length; i++) {
         const slide = document.createElement('div');
