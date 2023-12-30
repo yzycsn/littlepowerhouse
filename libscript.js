@@ -16,7 +16,7 @@ function showSlides() {
         img.alt = `Book ${i + 1} Cover`;
 
         // Set a fixed height for each book cover based on the aspect ratio (1:1.41)
-        img.style.height = 'calc(100vw / 1.41)';
+        img.style.height = 'calc(10vw / 1.41)';
 
         const bookTitle = document.createElement('div');
         bookTitle.classList.add('book-title');
