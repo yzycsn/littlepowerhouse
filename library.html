@@ -4,69 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .slideshow-container {
-            position: relative;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .book-slide {
-            display: none;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .book-title {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            padding: 8px;
-            border-radius: 4px;
-        }
-
-        .prev,
-        .next {
-            position: absolute;
-            top: 50%;
-            font-size: 24px;
-            cursor: pointer;
-            color: #333;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -101,7 +38,7 @@
                 img.alt = `Book ${i + 1} Cover`;
 
                 // Set a fixed height for each book cover based on the aspect ratio (1:1.41)
-                img.style.height = 'calc(100vw / 1.41)';
+                img.style.height = 'calc(10vw / 1.41)';
 
                 const bookTitle = document.createElement('div');
                 bookTitle.classList.add('book-title');
