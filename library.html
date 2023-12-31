@@ -52,8 +52,14 @@
                 slidesContainer.appendChild(slide);
             }
 
+            // Set the display property for each slide
+            const slides = slidesContainer.getElementsByClassName('book-slide');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
             // Display the current slide
-            slidesContainer.getElementsByClassName('book-slide')[slideIndex].style.display = 'block';
+            slides[slideIndex].style.display = 'block';
         }
 
         function plusSlides(n) {
