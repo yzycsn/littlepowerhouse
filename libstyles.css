@@ -1,15 +1,12 @@
 .container {
 	width: 20%;
 	margin: 10px auto;
-	background: white;
 }
-
 .carousel{
 	border: 2px solid #ccc;
 	height: 400px;
 	position: relative;
 }
-
 .slider {
 	height: 100%;
 	display: flex;
@@ -17,25 +14,20 @@
 	border: 1px solid red;
 	transition: all 0.3s;
 }
-
- 
 .slider section{
 	flex-basis: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 .controls .arrow{
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
 }
-
 .arrow.left{
 	left: 10px;
 }
-
 .arrow.right{
 	right: 10px;
 }
