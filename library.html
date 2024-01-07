@@ -1,93 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="libstyles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Library</h1>
-        <div class="slideshow-container" id="slideshow-container"></div>
-
-        <!-- Navigation arrows -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <script>
-        let slideIndex = 0;
-
-        function showSlides() {
-            const slidesContainer = document.getElementById("slideshow-container");
-            slidesContainer.innerHTML = ''; // Clear existing content
-
-            // Array of book covers (replace with actual cover filenames)
-            const bookCovers = ['book1_cover.jpg', 'book2_cover.jpg'];
-
-            for (let i = 0; i < bookCovers.length; i++) {
-                const slide = document.createElement('div');
-                slide.classList.add('book-slide', 'fade');
-
-                const imgLink = document.createElement('a');
-                imgLink.href = `books/book${i + 1}.pdf`; // Link to the corresponding PDF file
-                imgLink.target = '_blank'; // Open link in a new tab/window
-
-                const img = document.createElement('img');
-                img.src = `books/${bookCovers[i]}`;
-                img.alt = `Book ${i + 1} Cover`;
-
-                // Set a fixed height for each book cover based on the aspect ratio (1:1.41)
-                img.style.height = 'calc(10vw / 1.41)';
-
-                const bookTitle = document.createElement('div');
-                bookTitle.classList.add('book-title');
-                bookTitle.innerHTML = `<a href="books/book${i + 1}.pdf" target="_blank">Book ${i + 1}</a>`;
-
-                imgLink.appendChild(img);
-                slide.appendChild(imgLink);
-                slide.appendChild(bookTitle);
-
-                slidesContainer.appendChild(slide);
-            }
-
-            // Set the display property for each slide
-            const slides = slidesContainer.getElementsByClassName('book-slide');
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-
-            // Display the current slide
-            slides[slideIndex].style.display = 'block';
-        }
-
-        function plusSlides(n) {
-            slideIndex += n;
-
-            const slides = document.getElementsByClassName('book-slide');
-
-            if (slideIndex >= slides.length) {
-                slideIndex = 0;
-            } else if (slideIndex < 0) {
-                slideIndex = slides.length - 1;
-            }
-
-            showSlides();
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            showSlides();
-
-            // Attach click event handlers to navigation arrows
-            document.querySelector('.prev').addEventListener('click', function() {
-                plusSlides(-1);
-            });
-
-            document.querySelector('.next').addEventListener('click', function() {
-                plusSlides(1);
-            });
-        });
-    </script>
+	<div class="container">
+		<div class="arr left"><div></div></div>
+		<div class="arr left"><div></div></div>
+	</div>
 </body>
 </html>
