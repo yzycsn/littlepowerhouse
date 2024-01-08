@@ -20,13 +20,13 @@ document.querySelectorAll('.controls li').forEach(function(indicator, ind){
 
 leftArrow.addEventListener('click', function(){
     sectionIndex = (section > 0) ? sectionIndex - 1 : 0;
-    setIndex();
     indicatorParents.children[sectionIndex].classList.add('selected');
-    
+    setIndex();
 });
 
 rightArrow.addEventListener('click', function(){
     sectionIndex = (section < 3) ? sectionIndex + 1 : 3;
-    setIndex();
     indicatorParents.children[sectionIndex].classList.add('selected');
+    setIndex();
 });
+
