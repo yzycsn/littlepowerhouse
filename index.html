@@ -2,16 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>Online Library</title>
     <link rel="stylesheet" href="homepage.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .button {
+            background-color: #008CBA; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>LIBRARY</h1>
-        <button id="redirectToSection">OPEN SELECTION</button>
+        <h1>Welcome to Our Online Library</h1>
+        <a href="library.html" class="button">Visit Our Collection</a>
+        <section>
+            <p>Welcome to littlepowerhouse.org, a free online library for children's education in STEM. Here, you can explore our vast collection of eye-catching and engaging graphic novels. 
+            Dive into the world of literature and knowledge with just a click. Whether you're researching, reading for pleasure, or exploring new topics, our extensive catalog is here to cater to your every need.</p>
+        </section>
     </div>
-
-    <script src="script.js"></script>
+    <script src = "script.js"></script>
 </body>
 </html>
