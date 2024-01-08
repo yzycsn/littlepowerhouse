@@ -13,6 +13,7 @@
 	width: 400%;
 	border: 1px solid red;
 	transition: all 0.3s;
+	overflow: hidden;
 }
 .slider section{
 	flex-basis: 100%;
