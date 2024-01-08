@@ -7,6 +7,7 @@
 	border: 2px solid #ccc;
 	height: 400px;
 	position: relative;
+	overflow: hidden;
 }
 .slider {
 	height: 100%;
@@ -36,4 +37,26 @@
 }
 .arrow.right{
 	right: 10px;
+}
+.controls ul{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+.controls ul li{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #333;
+	border-radius: 50px;
+	margin: 10px;
+	background: #333;
+	cursor: pointer;
+}
+.controls ul li.selected{
+	background: transparent;
 }
