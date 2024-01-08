@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 .container {
-	width: 90%;
+	width: 20%;
 	margin: 10px auto;
 }
 .carousel{
@@ -15,7 +15,6 @@
 	width: 400%;
 	border: 1px solid red;
 	transition: all 0.3s;
-	overflow: hidden;
 }
 .slider section{
 	flex-basis: 100%;
@@ -38,6 +37,12 @@
 .arrow.right{
 	right: 10px;
 }
+
+/*.arrow i{
+	font-size: 70px;
+	webkit-user-select: none;
+}*/
+
 .controls ul{
 	position: absolute;
 	bottom: 20px;
