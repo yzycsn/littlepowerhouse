@@ -29,7 +29,7 @@
 	transform: translateY(-50%);
 	cursor: pointer;
 }
-.controls.arrow{
+.controls .arrow i{
 	font-size: 60px;
 }
 .arrow.left{
