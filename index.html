@@ -11,21 +11,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f7f7f7;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
-            background-color: #f7f7f7;
+            min-height: 100vh;
         }
         .container {
+            width: 80%;
+            margin: auto;
             text-align: center;
+            padding: 20px;
+            max-width: 800px;
         }
         h1 {
             color: #333;
-        }
-        p {
-            color: #666;
+            margin-bottom: 20px;
         }
         .button {
             background-color: #008CBA; 
@@ -36,8 +37,17 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
+            margin: 20px 2px;
             cursor: pointer;
+        }
+        .description {
+            text-align: justify;
+            color: #666;
+            margin-top: 50px; /* Adjust this value to move the text box lower */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -45,11 +55,9 @@
     <div class="container">
         <h1>Welcome to Our Online Library</h1>
         <a href="redirectToSection" class="button">Visit Our Collection</a>
-        <section>
-            <p>Welcome to littlepowerhouse.org, a free online library for children's education in STEM. Here, you can explore our vast collection of eye-catching and engaging graphic novels. 
-            Dive into the world of literature and knowledge with just a click. Whether you're researching, reading for pleasure, or exploring new topics, our extensive catalog is here to cater to your every need.</p>
-        </section>
+        <div class="description">
+            <p>Welcome to littlepowerhouse.org, a free online library dedicated to enhancing children's education in STEM. Here, you can explore our vast collection of eye-catching and engaging graphic novels, each crafted to ignite curiosity and foster a love for science, technology, engineering, and mathematics. Dive into the world of literature and knowledge with just a click. Whether you're researching, reading for pleasure, or exploring new topics, our extensive catalog is here to cater to your every need. Our carefully curated resources are designed not only to educate but also to inspire young minds. We believe in creating a dynamic learning environment that is both informative and fun. From interactive activities to thought-provoking content, littlepowerhouse.org is your go-to destination for educational materials that make learning an exciting adventure. Join our community today and help your child discover the joy of learning through play, exploration, and discovery.</p>
+        </div>
     </div>
-    <script src = "script.js"></script>
 </body>
 </html>
